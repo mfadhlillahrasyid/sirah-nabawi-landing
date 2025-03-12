@@ -326,6 +326,23 @@
         Kehabisan Buku Terlaris Ini</p>
     </div>
 
+    <!-- Promo Code -->
+    <div class="bg-neutral-50 pb-5">
+      <div class="max-w-sm mx-auto bg-neutral-200 p-5 rounded-lg shadow-lg text-center">
+        <p class="text-gray-700 text-sm mb-2">
+          Copy promo dibawah ini untuk dapatkan Potongan hingga <strong>50RB</strong> <br>(Khusus pembelian dari LynkID)
+        </p>
+        <div class="flex items-center justify-between bg-white border border-gray-300 rounded-lg p-3 mt-2">
+          <span id="promoCode" class="text-gray-900 font-semibold text-lg">X9AJRMDHNA0</span>
+          <button onclick="copyPromo()" id="copyBtn"
+            class="text-green-600 font-semibold hover:text-green-700 active:scale-95 transition-all">
+            Salin
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catalog -->
     <div class="bg-neutral-50">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper pt-5 pb-12">
@@ -368,8 +385,7 @@
                   </div>
                 </div>
               </div>
-              <a href="https://lynk.id/mfadhlillahrasyid/w3Lp0ze"
-                onClick="LynkID()"
+              <a href="https://lynk.id/mfadhlillahrasyid/w3Lp0ze" onClick="LynkID()"
                 class="mt-8 block rounded-2xl px-3.5 py-4 text-center text-white font-semibold bg-gradient-to-r from-green-400 to-green-700 hover:from-green-500 hover:to-green-800 transition shadow-emerald-600">
                 Pesan Sekarang &raquo;</a>
             </div>
@@ -391,8 +407,7 @@
                   </div>
                 </div>
               </div>
-              <a href="https://lynk.id/mfadhlillahrasyid/QOBaWPP"
-                onClick="LynkID()"
+              <a href="https://lynk.id/mfadhlillahrasyid/QOBaWPP" onClick="LynkID()"
                 class="mt-8 block rounded-2xl px-3.5 py-4 text-center text-white font-semibold bg-gradient-to-r from-green-400 to-green-700 hover:from-green-500 hover:to-green-800 transition shadow-emerald-600">
                 Pesan Sekarang &raquo;</a>
             </div>
@@ -406,7 +421,9 @@
       <p class="leading-6 text-sm">kamu bisa pesan melalui Whatsapp</p>
       <p class="leading-6 text-2xl tracking-tight font-extrabold text-red-600 mt-3">Gratis Ongkir!</p>
       <div class="max-w-xs mx-auto">
-        <a href="https://wa.me/+6281214469668?text=Assalammualaikum%20kak%2C%20Buku%20Sirah%20Nabawiyah-nya%20Masih%20Tersedia%20%3F%20" onClick="CallToAction()" class="mt-5 w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold shadow-lg transition-all duration-300 ease-in-out transform active:scale-95 active:ring-4 active:ring-green-300">
+        <a href="https://wa.me/+6281214469668?text=Assalammualaikum%20kak%2C%20Buku%20Sirah%20Nabawiyah-nya%20Masih%20Tersedia%20%3F%20"
+          onClick="CallToAction()"
+          class="mt-5 w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold shadow-lg transition-all duration-300 ease-in-out transform active:scale-95 active:ring-4 active:ring-green-300">
           <img src="/sirah-nabawi-landing/public/whatsapp.webp" alt="WhatsApp" class="w-15 h-15">
           <span>Pesan via WhatsApp</span>
         </a>
@@ -451,6 +468,19 @@
         clickable: true,
       },
     });
+  </script>
+
+  <script>
+    function copyPromo() {
+      const promoText = document.getElementById("promoCode").innerText;
+      navigator.clipboard.writeText(promoText).then(() => {
+        const copyBtn = document.getElementById("copyBtn");
+        copyBtn.innerText = "Disalin!";
+        setTimeout(() => {
+          copyBtn.innerText = "Salin";
+        }, 1500);
+      });
+    }
   </script>
 </body>
 
