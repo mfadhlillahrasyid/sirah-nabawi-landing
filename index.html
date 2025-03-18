@@ -304,27 +304,26 @@
       </video>
     </div>
 
-    <div class="p-10">
-      <h1 class="font-extrabold tracking-tight text-center text-3xl mt-4 text-red-600">Saya ingin pesan, berapa
+    <div class="py-5 px-10">
+      <h1 class="font-extrabold tracking-tight text-center text-xl mt-4 text-neutral-600">Saya ingin pesan, berapa
         harganya?</h1>
       <p class="mt-3 leading-6 text-center">Alhamdulillah... Untuk pemesanan hari ini kami sedang mengadakan
         <mark>"Event Promo Sambut Ramadhan"</mark> dengan <u>Potongan Harga Hingga 50RB dan Gratis Ongkir</u>
       </p>
     </div>
 
-    <div class="text-center px-10">
-      <div class="items-center rounded-xl bg-yellow-50 py-5 px-4 text-yellow-700 ring-1 ring-yellow-600/10 ring-inset">
-        <p class="leading-5 font-bold">Sudah saatnya kita Mengenal & Tambah Cinta kepada Rasulullah ﷺ </p>
-      </div>
-    </div>
-
-    <div class="p-10 mt-8 bg-neutral-50">
+    <div class="py-5 px-10 mt-8 bg-neutral-50">
       <h1 class="font-extrabold tracking-tight text-center text-3xl mt-4 text-red-600">Promo Bulan Ramadhan Berkah Untuk
         Kamu</h1>
       <p class="mt-3 leading-6 text-sm font-semibold text-center">Kamu Yang Cinta dengan Baginda Rasulullah<br>Jangan
         Sampai
         Kehabisan Buku Terlaris Ini</p>
       <img src="/sirah-nabawi-landing/public/2.webp" class="mt-10 rounded-2xl" alt="Buku Sirah Nabawiyah">
+      <div class="text-center py-7 px-10 bg-white mt-5 shadow-2xl rounded-2xl">
+        <p class="font-semibold ">Harga Promo!</p>
+        <h2 class="font-bold tracking-tight text-lg mt-3 text-red-600"><strike>Rp. 250,000</strike></h2>
+        <h2 class="font-extrabold tracking-tight text-3xl mt-2 text-neutral-800">Rp. 165,000</h2>
+      </div>
     </div>
 
     <!-- Promo Code 
@@ -432,17 +431,6 @@
       </div>
     </div>
 
-    <div class="pt-5 pb-10 px-10">
-      <ul class="space-y-1 mt-3">
-        <li class="flex items-start">
-          <p class="leading-6 text-sm text-center">Sirah Nabawiyah dan Sirah Rasulullah adalah <mark>Buku yang sama
-              Persis isi nya</mark>, Hanya <b>beda cover nya saja</b>.
-            kalau yang <u>hitam itu cover yang sudah banyak di Pasaran</u>, sedangkan yang <u>Putih (Sirah Rasullah)
-              adalah Cover Ekslusif</u>.</mark></p>
-        </li>
-      </ul>
-    </div>
-
     <hr class="border-t border-gray-200">
 
     <div class="text-center p-10">
@@ -459,6 +447,7 @@
     </div>
 
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -471,7 +460,6 @@
       },
     });
   </script>
-
   <script>
     function copyPromo() {
       const promoText = document.getElementById("promoCode").innerText;
